@@ -23,4 +23,6 @@ variable "owner" {
   default = "rcassidy"
 }
 
-variable "subnet_ids" {} 
+variable "subnet_ids" {
+  description = "To use a predefined subnet use ${data.[subnet]"
+} 
