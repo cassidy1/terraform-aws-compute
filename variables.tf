@@ -22,3 +22,5 @@ variable "owner" {
   description = "identifier of who is provisioning"
   default = "rcassidy"
 }
+
+variable "subnet_ids" {} 
