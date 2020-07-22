@@ -27,7 +27,7 @@ variable "subnet_ids" {
   description = "To use a predefined subnet use $${data.[subnet]}"
 }
 
-variable "count" {
+variable "instance_count" {
   description = "Number of instances to provision"
   default     = "2"
 }
