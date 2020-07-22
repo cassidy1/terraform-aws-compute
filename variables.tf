@@ -1,11 +1,11 @@
 variable "aws_region" {
   description = "AWS region"
-  default     = "us-east-1"
+  default     = "us-west-2"
 }
 
 variable "ami_id" {
   description = "ID of the AMI to provision. Default is Ubuntu 14.04 Base Image"
-  default     = "ami-2e1ef954"
+  default     = "ami-0a4df59262c92cf19"
 }
 
 variable "instance_type" {
@@ -27,3 +27,7 @@ variable "subnet_ids" {
   description = "To use a predefined subnet use $${data.[subnet]}"
 }
 
+variable "count" {
+  description = "Number of instances to provision"
+  default     = "2"
+}
